@@ -10,7 +10,7 @@ Fungsi: areaOfRectangle(length, width)
 function areaOfRectangle(length, width) {
   return length * width;
 }
-console.log(areaOfRectangle(10, 5)); // Output: 15
+console.log(areaOfRectangle(5, 3)); // Output: 15
 ```
 
 
@@ -28,11 +28,11 @@ function circleProperties(radius) {
   const area = Math.PI * Math.pow(radius, 2);
   return {
     diameter,
-    circumference: circumference.toFixed(4),
-    area: area.toFixed(4),
+    circumference: circumference.toFixed(3),
+    area: area.toFixed(3),
   };
 }
-console.log(circleProperties(7)); // Output: { diameter: 14, circumference: '43.9823', area: '153.9380' }
+console.log(circleProperties(5)); // Output: {diameter: 10, circumference: '31.416', area: '78.540'}
 ```
 
 ## 3. Perhitungan Sudut Ketiga Segitiga
@@ -46,7 +46,7 @@ Fungsi: thirdAngle(a, b)
 function thirdAngle(a, b) {
   return 180 - (a + b);
 }
-console.log(thirdAngle(50, 70)); // Output: 60
+console.log(thirdAngle(80, 65)); // Output: 35
 ```
 
 ## 4. Perhitungan Selisih Tanggal
@@ -60,7 +60,8 @@ function dateDifference(date1, date2) {
   const d1 = new Date(date1);
   const d2 = new Date(date2);
   return Math.abs((d2 - d1) / (1000 * 60 * 60 * 24));
-console.log(dateDifference('2025-03-08', '2025-03-01')); // Output: 7
+}
+console.log(dateDifference('2024-03-19', '2024-03-21')); // Output: 2
 }
 ```
 
